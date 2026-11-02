@@ -13,6 +13,9 @@
   };
   var saved = null;
   try { saved = localStorage.getItem('site-lang'); } catch (e) {}
+  // ?lang=ar|en (the game's Settings links pass its current language) wins over the remembered choice
+  var q = /[?&]lang=(ar|en)\b/.exec(location.search);
+  if (q) saved = q[1];
   if (saved !== 'ar' && saved !== 'en') {
     var nav = (navigator.language || '').toLowerCase();
     saved = nav.indexOf('ar') === 0 ? 'ar' : 'en';
