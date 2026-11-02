@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Twelve Hearts — Xo Games Studio</title>
+<meta name="description" content="Twelve Hearts: choose a hero and win back the twelve hearts Theodore, the King of Darkness, stole. A survival action game for iOS and Android in Arabic and English.">
+<meta property="og:title" content="Twelve Hearts">
+<meta property="og:description" content="Choose a hero and win back the twelve hearts the King of Darkness stole.">
+<meta property="og:image" content="https://xogamesstudio.com/twelve-hearts/app-icon.png">
+<link rel="icon" type="image/png" href="app-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Lalezar&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="lang.js"></script>
+</head>
+<body>
+
+<header class="site">
+  <div class="container">
+    <a class="brand" href="index.html"><img class="logo" src="app-icon.png" alt="">Twelve Hearts</a>
+    <nav class="site">
+      <a href="index.html" aria-current="page"><span class="ar">الرئيسية</span><span class="en">Home</span></a>
+      <a href="support.html"><span class="ar">الدعم</span><span class="en">Support</span></a>
+      <a href="privacy.html"><span class="ar">الخصوصية</span><span class="en">Privacy</span></a>
+      <a href="terms.html"><span class="ar">الشروط</span><span class="en">Terms</span></a>
+      <button class="langbtn" onclick="toggleLang()"><span class="ar">English</span><span class="en">العربية</span></button>
+    </nav>
+  </div>
+</header>
+<div class="ribbon"></div>
+
+<main>
+  <section class="hero container">
+    <img class="appicon" src="app-icon.png" alt="Twelve Hearts">
+    <span class="badge-pill"><span class="ar">مجانية • تُلعب بلا إنترنت • بلا حساب</span><span class="en">Free • Plays offline • No account</span></span>
+    <h1>Twelve Hearts</h1>
+    <p class="tag"><span class="ar">كان للعالم <strong>اثنا عشر قلباً</strong>، حتى انتزعها ثيودور ملك الظلام في ليلة بلا قمر. اختر بطلك، واصمد أمام موجات جيش العظام، وطوّر أسلحتك، واهزم الزعيم في آخر كل فصل لتستعيد القلوب واحداً تلو الآخر.</span><span class="en">The world once had <strong>twelve hearts</strong>, until Theodore, the King of Darkness, tore them away on a moonless night. Choose your hero, hold out against waves of the bone army, power up your weapons, and defeat the boss at the end of each chapter to win the hearts back, one by one.</span></p>
+    <div class="stores">
+      <span class="store-btn soon">
+        <svg viewBox="0 0 384 512" aria-hidden="true"><path d="M318.7 268.7c-.2-37 16.6-64.9 50.5-85.4-19-27.2-47.6-42.2-85.3-45.1-35.8-2.8-74.9 20.9-89.2 20.9-15.1 0-49.7-19.9-76.9-19.9C71.2 139.8 16 184.1 16 273.5c0 26.4 4.8 53.7 14.5 81.8 12.9 36.9 59.4 127.5 107.9 126 25.4-.6 43.3-18 76.3-18 32.1 0 48.7 18 76.9 18 49-.7 91-83 103.2-120-65.5-30.9-62-90.6-62-90.6zM258.1 90.3c30-35.6 27.3-68 26.4-79.6-26.6 1.5-57.3 18.1-74.7 38.5-19.2 21.8-30.5 48.7-28.1 78.1 28.8 2.2 54.9-12.7 76.4-37z"/></svg>
+        <span class="t"><small><span class="ar">قريباً على</span><span class="en">Coming soon to the</span></small><b>App Store</b></span>
+      </span>
+      <span class="store-btn soon">
+        <svg viewBox="0 0 512 512" aria-hidden="true"><path d="M325.3 234.3 104.6 13.6c-7-7-17-9-26-5l245.7 245.7 1-19.7zm79.1 36.9-58.6-33.8-30 30 30 30 58.6-33.8c14.8-8.5 14.8-29.9 0-37.4zM73.6 8.6c-3.4 3.6-5.6 8.9-5.6 15.8v463.2c0 6.9 2.2 12.2 5.6 15.8l253.9-253.9L73.6 8.6zM78.6 503.4c9 4 19 2 26-5l220.7-220.7-1-19.7L78.6 503.4z"/></svg>
+        <span class="t"><small><span class="ar">قريباً على</span><span class="en">Coming soon to</span></small><b>Google Play</b></span>
+      </span>
+    </div>
+    <p class="soon-note"><span class="ar">تصل قريباً إلى iPhone وأندرويد، مجاناً.</span><span class="en">Coming soon to iPhone and Android, free.</span></p>
+  </section>
+
+  <section class="section" style="padding-top:10px"><div class="container">
+    <h2><span class="ar">الحكاية</span><span class="en">The story</span></h2>
+    <p class="sub"><span class="ar">ثلاث لوحات تفتتح بها رحلتك</span><span class="en">Three panels that open your journey</span></p>
+    <div class="story">
+      <figure><img src="art/story-1.jpg" alt="" loading="lazy" width="600" height="900">
+        <figcaption><h3><span class="ar">السرقة</span><span class="en">The Theft</span></h3>
+        <p><span class="ar">في كل قلب نور أرض ونبض حياة. وفي ليلة بلا قمر مدّ ثيودور، ملك الظلام، يده وانتزعها واحداً تلو الآخر.</span><span class="en">Each heart held a land's light and pulse of life. Then, on a moonless night, Theodore, the King of Darkness, reached out and tore them away, one by one.</span></p></figcaption></figure>
+      <figure><img src="art/story-2.jpg" alt="" loading="lazy" width="600" height="900">
+        <figcaption><h3><span class="ar">الأفول</span><span class="en">The Fading</span></h3>
+        <p><span class="ar">خبا النور وجفّت الأرض، وقامت عظام الموتى تحرس الممالك المنسية، وحمل ثيودور القلوب إلى قلعته في آخر الطريق.</span><span class="en">The light faded and the land dried up, the bones of the dead rose to guard the forgotten kingdoms, and Theodore carried the hearts to his castle at the end of the road.</span></p></figcaption></figure>
+      <figure><img src="art/story-3.jpg" alt="" loading="lazy" width="600" height="900">
+        <figcaption><h3><span class="ar">النداء</span><span class="en">The Call</span></h3>
+        <p><span class="ar">لكن النور لا يموت تماماً. في كل قلب بقيت شظية تنبض، تنادي من يجرؤ على المطاردة… وواحد منهم أنت.</span><span class="en">But light never truly dies. In every heart a shard still pulses, calling whoever dares to give chase… and one of them is you.</span></p></figcaption></figure>
+    </div>
+  </div></section>
+
+  <section class="section"><div class="container">
+    <h2><span class="ar">كيف تُلعب</span><span class="en">How it plays</span></h2>
+    <p class="sub"><span class="ar">تحرّك، وأسلحتك تتولّى القتال</span><span class="en">You move, your weapons do the fighting</span></p>
+    <div class="grid">
+      <div class="feat">
+        <div class="ic" style="background:rgba(240,191,97,.16)">🦸</div>
+        <h3><span class="ar">خمسة أبطال</span><span class="en">Five heroes</span></h3>
+        <p><span class="ar">النينجا، والفارس المدرّع، والمسلّح التقني، ومحارب الطاقة، والخيميائي — لكلّ منهم ثلاثة أسلحة وأسلوب قتال مختلف.</span><span class="en">The Ninja, the Armored Knight, the Tech Gunner, the Energy Warrior and the Alchemist — each with three weapons and a different way to fight.</span></p>
+      </div>
+      <div class="feat">
+        <div class="ic" style="background:rgba(224,70,78,.16)">💀</div>
+        <h3><span class="ar">اصمد أمام الموجات</span><span class="en">Survive the waves</span></h3>
+        <p><span class="ar">جيش العظام يزحف عليك موجة بعد موجة. اختر بطاقة ترقية في كل مستوى، وواجه الزعيم في نهاية الفصل.</span><span class="en">The bone army closes in wave after wave. Pick an upgrade card at every level-up, and face the boss at the end of the chapter.</span></p>
+      </div>
+      <div class="feat">
+        <div class="ic" style="background:rgba(59,179,163,.16)">🏜️</div>
+        <h3><span class="ar">فصل الصحراء أولاً</span><span class="en">The desert chapter first</span></h3>
+        <p><span class="ar">يبدأ الإطلاق بفصل الصحراء: عشر مراحل تنتهي بزعيم. وفصول أخرى في الطريق، لكلّ قلب أرضه.</span><span class="en">Launch opens with the desert chapter: ten stages ending in a boss. More chapters are on the way, one land for each heart.</span></p>
+      </div>
+    </div>
+  </div></section>
+
+  <section class="section" style="padding-top:0"><div class="container">
+    <h2><span class="ar">لعبة تحترمك</span><span class="en">A game that respects you</span></h2>
+    <p class="sub"><span class="ar">ما تفعله اللعبة وما لا تفعله، بوضوح</span><span class="en">What the game does — and doesn't — in plain words</span></p>
+    <div class="grid">
+      <div class="feat">
+        <div class="ic" style="background:rgba(59,179,163,.16)">📴</div>
+        <h3><span class="ar">تُلعب بلا إنترنت</span><span class="en">Plays offline</span></h3>
+        <p><span class="ar">كل ما تحتاجه للّعب داخل التطبيق، وتقدّمك محفوظ على جهازك. لا حساب ولا تسجيل دخول.</span><span class="en">Everything you need to play is inside the app, and your progress is saved on your device. No account, no sign-in.</span></p>
+      </div>
+      <div class="feat">
+        <div class="ic" style="background:rgba(155,107,255,.16)">🛡️</div>
+        <h3><span class="ar">أنت تختار</span><span class="en">You choose</span></h3>
+        <p><span class="ar">مفتاح «مشاركة بيانات الاستخدام» في الإعدادات بيدك. نسألك عن الموافقة حيث يفرضها القانون، ويسألك iOS عن التتبّع، والرفض لا يُنقص من اللعبة شيئاً.</span><span class="en">The "Share usage data" switch in Settings is yours. We ask for consent where the law requires it, iOS asks about tracking, and saying no takes nothing away from the game.</span></p>
+      </div>
+      <div class="feat">
+        <div class="ic" style="background:rgba(240,191,97,.16)">🎬</div>
+        <h3><span class="ar">إعلانات باختيارك غالباً</span><span class="en">Ads, mostly your choice</span></h3>
+        <p><span class="ar">أغلب الإعلانات تشاهدها أنت مقابل مكافأة. وإعلان قصير بعد بعض الانتصارات، لا أثناء القتال أبداً.</span><span class="en">Most ads are ones you choose to watch for a reward. Plus a short ad after some victories — never in the middle of a fight.</span></p>
+      </div>
+      <div class="feat">
+        <div class="ic" style="background:rgba(224,70,78,.16)">🌙</div>
+        <h3><span class="ar">بالعربية والإنجليزية</span><span class="en">Arabic and English</span></h3>
+        <p><span class="ar">صُمّمت من اليمين إلى اليسار من أوّل شاشة، وتتبدّل إلى الإنجليزية من الإعدادات.</span><span class="en">Designed right-to-left from the first screen, and switches to English in Settings.</span></p>
+      </div>
+    </div>
+  </div></section>
+</main>
+
+<footer class="site">
+  <div class="container">
+    <nav>
+      <a href="privacy.html"><span class="ar">سياسة الخصوصية</span><span class="en">Privacy Policy</span></a>
+      <a href="terms.html"><span class="ar">الشروط والأحكام</span><span class="en">Terms &amp; Conditions</span></a>
+      <a href="support.html"><span class="ar">الدعم</span><span class="en">Support</span></a>
+      <a href="mailto:survivorarena2026@gmail.com" dir="ltr">survivorarena2026@gmail.com</a>
+    </nav>
+    <span class="cp">© 2026 Xo Games Studio — <span class="ar">جميع الحقوق محفوظة</span><span class="en">All rights reserved</span></span>
+  </div>
+</footer>
+
+</body>
+</html>
