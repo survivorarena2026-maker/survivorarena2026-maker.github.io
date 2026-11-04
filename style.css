@@ -1,0 +1,100 @@
+/* Xo Games Studio — studio landing page (bilingual AR/EN). Palette shared with /twelve-hearts/. */
+:root{
+  --bg-top:#141C3A; --bg-bottom:#0E1318; --surface:#121A22;
+  --card:#1A242B; --card-2:#17212A;
+  --ink:#F0F2F0; --body:#DCE3E4; --sub:#BCCACE; --muted:#A3B5BA; --dim:#7C8E94;
+  --gold:#F0BF61; --gold-lite:#FFD884; --gold-deep:#C9922F; --on-gold:#2A1B05;
+  --heart:#E0464E; --teal:#3BB3A3; --violet:#9B6BFF;
+  --line:#2A3A44; --shadow:0 14px 34px rgba(3,6,14,.45); --radius:20px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;background:var(--bg-bottom)}
+body{font-family:'Tajawal',system-ui,'Segoe UI',Tahoma,sans-serif;
+  background:radial-gradient(1100px 520px at 50% -120px,rgba(155,107,255,.22),transparent 70%),
+             linear-gradient(178deg,var(--bg-top) 0%,var(--bg-bottom) 640px) no-repeat,var(--bg-bottom);
+  color:var(--body);line-height:1.9;font-size:18px}
+h1,h2,h3{font-family:'Lalezar','Tajawal',sans-serif;font-weight:400;color:var(--ink)}
+html[data-lang="en"] h1,html[data-lang="en"] h2,html[data-lang="en"] h3{font-family:'Baloo 2','Tajawal',sans-serif;font-weight:800}
+a{color:var(--gold-lite);text-decoration:none}
+a:hover{text-decoration:underline}
+a:focus-visible,button:focus-visible{outline:2px solid var(--gold-lite);outline-offset:2px}
+.container{max-width:960px;margin:0 auto;padding:0 22px}
+
+/* Header */
+header.site{background:rgba(14,19,24,.88);position:sticky;top:0;z-index:10;border-bottom:1px solid var(--line);backdrop-filter:blur(8px)}
+header.site .container{display:flex;align-items:center;justify-content:space-between;height:70px;gap:10px}
+.brand{display:flex;align-items:center;gap:11px;font-size:21px;color:var(--ink);font-weight:700}
+.brand:hover{text-decoration:none}
+.mark{direction:ltr;display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:12px;
+  background:linear-gradient(135deg,var(--gold-lite),var(--gold));color:var(--on-gold);font-family:'Baloo 2',sans-serif;
+  font-weight:800;font-size:19px;letter-spacing:-.5px;box-shadow:0 3px 0 var(--gold-deep)}
+.mark i{font-style:normal;color:var(--heart)}
+nav.site{display:flex;align-items:center;flex-wrap:wrap}
+nav.site a{color:var(--muted);margin-inline-start:18px;font-weight:500}
+nav.site a:hover{color:var(--gold-lite);text-decoration:none}
+.langbtn{background:linear-gradient(180deg,var(--gold-lite),var(--gold));color:var(--on-gold);border:0;border-radius:999px;
+  padding:7px 16px;font-family:inherit;font-weight:700;font-size:15px;cursor:pointer;margin-inline-start:16px;line-height:1.5;
+  box-shadow:0 3px 0 var(--gold-deep)}
+
+/* Hero */
+.hero{text-align:center;padding-top:64px;padding-bottom:34px}
+.badge-pill{display:inline-block;background:rgba(59,179,163,.10);border:1px solid var(--teal);color:var(--teal);
+  border-radius:999px;padding:5px 16px;font-weight:600;font-size:15px;margin-bottom:20px}
+.hero h1{font-size:56px;line-height:1.3;margin-bottom:12px;color:var(--gold-lite);text-shadow:0 3px 0 rgba(0,0,0,.35)}
+.hero .tag{font-size:20px;color:var(--sub);max-width:700px;margin:0 auto}
+
+/* Sections */
+.section{padding:44px 0}
+.section h2{font-size:34px;text-align:center;margin-bottom:8px}
+.section .sub{text-align:center;color:var(--muted);margin-bottom:30px}
+
+/* Game card */
+.games{display:grid;gap:22px}
+.game{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);background:var(--card);border:1px solid var(--line);
+  border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+.game .art{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;background:var(--surface)}
+.game .art img{display:block;width:100%;height:100%;aspect-ratio:2/3;object-fit:cover}
+.game .info{padding:28px 30px}
+.game .head{display:flex;align-items:center;gap:14px;margin-bottom:10px}
+.game .head img{width:64px;height:64px;border-radius:16px;border:1px solid rgba(240,191,97,.55)}
+.game h3{font-size:28px;line-height:1.3;color:var(--gold-lite)}
+.game .kind{font-size:14px;color:var(--teal);font-weight:600}
+.game p{color:var(--sub);font-size:16.5px;margin-bottom:16px}
+.stores{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+.store{display:inline-flex;align-items:center;gap:8px;background:var(--card-2);border:1px solid var(--line);border-radius:12px;
+  padding:7px 14px;color:var(--ink);font-size:15px;font-weight:600}
+.store svg{width:18px;height:18px;fill:var(--ink)}
+.store.soon{opacity:.6}
+.store small{color:var(--muted);font-weight:400}
+.legal{font-size:15px}
+.legal .sep{color:var(--dim);margin:0 7px}
+.more{text-align:center;color:var(--dim);font-size:16px;margin-top:22px}
+
+/* Contact */
+.contact{background:linear-gradient(135deg,rgba(240,191,97,.14),rgba(224,70,78,.08) 70%);border:1px solid var(--gold);
+  border-radius:var(--radius);padding:30px;text-align:center}
+.contact .mail{font-size:21px;font-weight:700;text-decoration:underline;word-break:break-all}
+.contact p{color:var(--body);margin-top:6px}
+
+/* Footer */
+footer.site{background:var(--surface);border-top:1px solid var(--line);padding:30px 0;margin-top:40px}
+footer.site .container{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center}
+footer.site nav a{color:var(--muted);margin-inline-end:18px}
+footer.site .cp{color:var(--dim);font-size:15px}
+
+@media(max-width:760px){
+  .game{grid-template-columns:1fr}
+  .game .art{height:230px}
+  .game .art img{aspect-ratio:auto;object-position:center 30%}
+  .game .info{padding:22px 20px}
+}
+@media(max-width:600px){
+  .hero h1{font-size:40px}.hero .tag{font-size:18px}
+  header.site .container{height:auto;padding-top:10px;padding-bottom:10px;flex-wrap:wrap}
+  nav.site a{margin-inline-start:12px;font-size:15px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Language toggle */
+html[data-lang="ar"] .en{display:none!important}
+html[data-lang="en"] .ar{display:none!important}
