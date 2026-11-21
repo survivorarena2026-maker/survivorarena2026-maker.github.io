@@ -65,6 +65,8 @@ nav.site a:hover{color:var(--gold-lite);text-decoration:none}
   padding:7px 14px;color:var(--ink);font-size:15px;font-weight:600}
 .store svg{width:18px;height:18px;fill:var(--ink)}
 .store.soon{opacity:.6}
+a.store{transition:border-color .2s}
+a.store:hover{text-decoration:none;color:var(--ink);border-color:var(--gold)}
 .store small{color:var(--muted);font-weight:400}
 .legal{font-size:15px}
 .legal .sep{color:var(--dim);margin:0 7px}
