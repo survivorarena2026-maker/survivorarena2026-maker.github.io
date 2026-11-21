@@ -155,3 +155,9 @@ footer.site .cp{color:var(--dim);font-size:15px}
 /* ── Language toggle (Arabic / English) ── */
 html[data-lang="ar"] .en{display:none !important}
 html[data-lang="en"] .ar{display:none !important}
+
+/* ── Official store badges (same set as the other games' pages) ── */
+.stores{align-items:center;column-gap:4px}
+.badge-link{display:inline-block;line-height:0;transition:transform .2s}
+.badge-link:hover{transform:translateY(-2px)}
+.store-badge{display:block;width:auto}
